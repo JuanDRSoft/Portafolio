@@ -12,7 +12,7 @@ export interface Experience {
   company: string
   period: string
   description: string
-  icon: string
+  icon: any
 }
 
 export interface VisibleSections {

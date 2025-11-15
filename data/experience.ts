@@ -1,4 +1,8 @@
 import { Experience } from '@/types'
+import CELUWEB from '../public/companies/celuweb.jpeg'
+import FIVERR from '../public/companies/fiverr.jpeg'
+import SOLUTIO from '../public/companies/solutio.png'
+import JTHREE from '../public/companies/jthreeagency.jpg'
 
 export const experiences: Experience[] = [
   {
@@ -16,7 +20,7 @@ export const experiences: Experience[] = [
   <li>- Mejora de procesos de seguimiento y entrega.</li>
 </ul>
 `,
-    icon: 'code'
+    icon: CELUWEB
   },
   {
     role: 'Software Developer',
@@ -33,7 +37,7 @@ export const experiences: Experience[] = [
 <li>- Experiencia en la construcción de soluciones escalables que aportaron valor inmediato a negocios de distintos sectores.</li>
 </ul>
 `,
-    icon: 'code'
+    icon: FIVERR
   },
   {
     role: 'Software Developer',
@@ -50,7 +54,7 @@ export const experiences: Experience[] = [
 <li>- Colaboración en el diseño de interfaces intuitivas y fáciles de usar, enfocadas en las necesidades del sector jurídico.</li>
 <li>- Contribución a un producto que permitió a los clientes gestionar procesos legales de forma más rápida, organizada y eficiente.</li>
 </ul>`,
-    icon: 'briefcase'
+    icon: SOLUTIO
   },
   {
     role: 'Frontend Developer',
@@ -67,6 +71,6 @@ export const experiences: Experience[] = [
 <li>- Colaboración directa con los comercios para reflejar su identidad de marca y potenciar su presencia digital.</li>
 <li>- Apoyo en la digitalización de empresas locales, contribuyendo a mejorar su visibilidad y alcance en el mercado.</li>
 </ul>`,
-    icon: 'user'
+    icon: JTHREE
   }
 ]

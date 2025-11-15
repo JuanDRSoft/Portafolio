@@ -1,6 +1,7 @@
 import { experiences } from '@/data/experience'
 import { VisibleSections } from '@/types'
 import { Briefcase } from 'lucide-react'
+import Image from 'next/image'
 
 const Experience = ({ visibleSections }: { visibleSections: VisibleSections }) => {
   return (
@@ -16,19 +17,21 @@ const Experience = ({ visibleSections }: { visibleSections: VisibleSections }) =
         </div>
         <div className="relative">
           {/* Línea vertical de la timeline */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300" />
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300 hidden md:block" />
 
           <div className="space-y-12">
             {experiences.map((exp, idx) => (
               <div
                 key={idx}
-                className={`relative pl-20 opacity-0 ${
+                className={`relative md:pl-20 opacity-0 ${
                   visibleSections.experiencia ? 'animate-slideInLeft' : ''
                 }`}
                 style={{ animationDelay: `${idx * 0.15 + 0.2}s` }}
               >
                 {/* Punto de la timeline */}
-                <div className="absolute left-5 top-1 w-7 h-7 bg-gray-900 rounded-full border-4 border-gray-50 z-10" />
+                <div className="absolute left-3 top-1 overflow-hidden w-10 h-10 bg-gray-900 rounded-full border-4 border-gray-50 z-10 hidden md:block">
+                  <Image src={exp.icon} alt={exp.role} width={100} height={100} />
+                </div>
 
                 {/* Contenido de la experiencia */}
                 <div className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-all duration-300">
