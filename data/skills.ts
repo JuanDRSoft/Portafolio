@@ -14,5 +14,7 @@ export const skills: Skill[] = [
   { name: 'PostgreSQL', level: 75 },
   { name: 'Java', level: 50 },
   { name: 'MySQL', level: 90 },
-  { name: 'MongoDB', level: 90 }
+  { name: 'MongoDB', level: 90 },
+  { name: 'n8n', level: 90 },
+  { name: 'Git', level: 90 }
 ]

@@ -12,7 +12,7 @@ const Hero = () => {
           alt="Logo"
           width={100}
           height={100}
-          className="w-32 h-32 shadow-xl border border-gray-200  bg-gradient-to-br from-gray-800 to-gray-600 rounded-full mx-auto mb-8 flex items-center justify-center text-white text-4xl font-bold opacity-0 animate-fadeIn"
+          className="w-32 h-32 shadow-xl border border-gray-200  bg-linear-to-br from-gray-800 to-gray-600 rounded-full mx-auto mb-8 flex items-center justify-center text-white text-4xl font-bold opacity-0 animate-fadeIn"
         />
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 opacity-0 animate-fadeInUp delay-200">
@@ -36,13 +36,24 @@ const Hero = () => {
           </button>
         </div>
         <div className="flex gap-6 justify-center mt-12 opacity-0 animate-fadeInUp delay-500">
-          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+          <a
+            target="_blank"
+            href="https://github.com/JuanDRSoft"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
+          >
             <Github size={24} />
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/juan-diego-rios-saenz/"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
+          >
             <Linkedin size={24} />
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+          <a
+            href="mailto:juandrsoft@gmail.com"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
+          >
             <Mail size={24} />
           </a>
         </div>

@@ -13,7 +13,7 @@ const Projects = ({ visibleSections }: { visibleSections: VisibleSections }) => 
           }`}
         >
           <FolderGit2 className="text-gray-900" size={32} />
-          <h2 className="text-4xl font-bold">Proyectos</h2>
+          <h2 className="text-4xl font-bold">Proyectos Destacados</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project: Project, idx) => (
@@ -28,7 +28,7 @@ const Projects = ({ visibleSections }: { visibleSections: VisibleSections }) => 
                 <Image
                   src={project.images[0]}
                   alt={project.name}
-                  width={100}
+                  width={1000}
                   height={100}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />

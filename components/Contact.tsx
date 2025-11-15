@@ -1,5 +1,5 @@
 import { VisibleSections } from '@/types'
-import { Send } from 'lucide-react'
+import { Linkedin, Mail, Phone, Send } from 'lucide-react'
 import { useState } from 'react'
 
 const Contact = ({ visibleSections }: { visibleSections: VisibleSections }) => {
@@ -17,53 +17,50 @@ const Contact = ({ visibleSections }: { visibleSections: VisibleSections }) => {
 
   return (
     <section id="contacto" className="py-20 px-6 bg-gray-50">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div
-          className={`flex items-center gap-3 mb-12 opacity-0 ${
+          className={`flex justify-center items-center gap-3 mb-14 opacity-0 ${
             visibleSections.contacto ? 'animate-fadeInUp' : ''
           }`}
         >
           <Send className="text-gray-900" size={32} />
-          <h2 className="text-4xl font-bold">Contacto</h2>
+          <h2 className="text-4xl font-bold">Datos De Contacto</h2>
         </div>
-        <div
-          className={`space-y-6 opacity-0 ${
-            visibleSections.contacto ? 'animate-fadeInUp delay-200' : ''
-          }`}
-        >
-          <div>
-            <label className="block text-sm font-medium mb-2">Nombre</label>
-            <input
-              type="text"
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900"
-            />
+
+        <div className="flex justify-center items-center gap-10">
+          <div className="flex flex-col items-center gap-2 w-full">
+            <div className="bg-black w-20 h-20 rounded-full flex justify-center items-center">
+              <Phone className="text-white" size={32} />
+            </div>
+
+            <a target="_blank" href="tel:+573103782458" className="font-semibold text-2xl">
+              +57 310 378 2458
+            </a>
           </div>
-          <div>
-            <label className="block text-sm font-medium mb-2">Email</label>
-            <input
-              type="email"
-              value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900"
-            />
+
+          <div className="flex flex-col items-center gap-2 w-full">
+            <div className="bg-black w-20 h-20 rounded-full flex justify-center items-center">
+              <Mail className="text-white" size={32} />
+            </div>
+
+            <a target="_blank" href="mailto:juandrsoft@gmail" className="font-semibold text-2xl">
+              juandrsoft@gmail.com
+            </a>
           </div>
-          <div>
-            <label className="block text-sm font-medium mb-2">Mensaje</label>
-            <textarea
-              rows={5}
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900"
-            />
+
+          <div className="flex flex-col items-center gap-2 w-full">
+            <div className="bg-black w-20 h-20 rounded-full flex justify-center items-center">
+              <Linkedin className="text-white" size={32} />
+            </div>
+
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/juan-diego-rios-saenz/"
+              className="font-semibold text-2xl"
+            >
+              Juan Diego Ríos Sáenz
+            </a>
           </div>
-          <button
-            onClick={handleSubmit}
-            className="w-full bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors"
-          >
-            Enviar Mensaje
-          </button>
         </div>
       </div>
     </section>

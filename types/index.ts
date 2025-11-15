@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export interface Project {
-  $id: string
   name: string
   description: string
   skills: string[]
