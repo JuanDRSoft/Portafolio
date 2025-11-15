@@ -1,4 +1,4 @@
-import { VisibleSections } from '@/interface/interfaces'
+import { VisibleSections } from '@/types'
 import { Send } from 'lucide-react'
 import { useState } from 'react'
 
