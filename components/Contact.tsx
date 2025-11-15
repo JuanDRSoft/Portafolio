@@ -27,7 +27,7 @@ const Contact = ({ visibleSections }: { visibleSections: VisibleSections }) => {
           <h2 className="text-4xl font-bold">Datos De Contacto</h2>
         </div>
 
-        <div className="flex justify-center items-center gap-10">
+        <div className="flex md:flex-row flex-col justify-center items-center gap-10">
           <div className="flex flex-col items-center gap-2 w-full">
             <div className="bg-black w-20 h-20 rounded-full flex justify-center items-center">
               <Phone className="text-white" size={32} />
