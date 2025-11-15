@@ -1,14 +1,13 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { ExternalLink, Code, Briefcase, MessageSquare, FolderGit2, Send } from 'lucide-react'
 import Hero from './Hero'
-import { VisibleSections } from '@/interface/interfaces'
 import Experience from './Experience'
 import Projects from './Projects'
 import Skills from './Skills'
 import Testimonials from './Testimonials'
 import Contact from './Contact'
+import { VisibleSections } from '@/types'
 
 export default function Portfolio() {
   const [visibleSections, setVisibleSections] = useState<VisibleSections>({})

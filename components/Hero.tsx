@@ -19,7 +19,7 @@ const Hero = () => {
           Software Developer
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 mb-8 opacity-0 animate-fadeInUp delay-300">
-          Creando experiencias web excepcionales con código limpio y diseño moderno
+          Especializado en desarrollo web, aplicaciones modernas y soluciones a la medida
         </p>
         <div className="flex gap-4 justify-center opacity-0 animate-fadeInUp delay-400">
           <button

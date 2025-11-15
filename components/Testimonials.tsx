@@ -1,32 +1,8 @@
-import { VisibleSections } from '@/interface/interfaces'
+import { testimonials } from '@/data/testimonials'
+import { VisibleSections } from '@/types'
 import { MessageSquare } from 'lucide-react'
-import React from 'react'
 
 const Testimonials = ({ visibleSections }: { visibleSections: VisibleSections }) => {
-  const testimonials = [
-    {
-      name: 'María García',
-      role: 'CEO at StartupX',
-      content:
-        'Excelente profesional, entregó el proyecto antes de tiempo y superó nuestras expectativas.',
-      avatar: 'MG'
-    },
-    {
-      name: 'Carlos Rodríguez',
-      role: 'CTO at TechCorp',
-      content:
-        'Su expertise técnico y capacidad de comunicación hicieron la diferencia en nuestro proyecto.',
-      avatar: 'CR'
-    },
-    {
-      name: 'Ana Martínez',
-      role: 'Product Manager',
-      content:
-        'Muy profesional y dedicado. Siempre disponible para resolver dudas y proponer mejoras.',
-      avatar: 'AM'
-    }
-  ]
-
   return (
     <section id="testimonios" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
@@ -60,6 +36,17 @@ const Testimonials = ({ visibleSections }: { visibleSections: VisibleSections })
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="flex justify-center mt-10">
+        <a
+          target="_blank"
+          href="https://es.fiverr.com/juandiegoriossa"
+          // onClick={() => scrollToSection('contacto')}
+          className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors"
+        >
+          Ver más testimonios
+        </a>
       </div>
     </section>
   )

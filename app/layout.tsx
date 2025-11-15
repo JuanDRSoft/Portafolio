@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Juan Diego Rios Saenz | Software Developer',
-  description: 'Portafolio de desarrollador full stack especializado en React, Next.js y Node.js',
+  description:
+    'Especializado en desarrollo web, aplicaciones modernas y soluciones a la medida de tus necesidades.',
   keywords: [
     'desarrollador',
     'full stack',

@@ -1,16 +1,8 @@
-import { VisibleSections } from '@/interface/interfaces'
+import { skills } from '@/data/skills'
+import { VisibleSections } from '@/types'
 import { Code } from 'lucide-react'
 
 const Skills = ({ visibleSections }: { visibleSections: VisibleSections }) => {
-  const skills = [
-    { name: 'React', level: 90 },
-    { name: 'Next.js', level: 85 },
-    { name: 'TypeScript', level: 80 },
-    { name: 'Node.js', level: 85 },
-    { name: 'Tailwind CSS', level: 90 },
-    { name: 'PostgreSQL', level: 75 }
-  ]
-
   return (
     <section id="skills" className="py-20 px-6 bg-gray-50">
       <div className="max-w-4xl mx-auto">

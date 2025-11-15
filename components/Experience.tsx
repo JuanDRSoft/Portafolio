@@ -1,31 +1,8 @@
-import { VisibleSections } from '@/interface/interfaces'
+import { experiences } from '@/data/experience'
+import { VisibleSections } from '@/types'
 import { Briefcase } from 'lucide-react'
 
 const Experience = ({ visibleSections }: { visibleSections: VisibleSections }) => {
-  const experiences = [
-    {
-      role: 'Senior Full Stack Developer',
-      company: 'Tech Company',
-      period: '2022 - Presente',
-      description: 'Desarrollo de aplicaciones web escalables y liderazgo de equipo de desarrollo.',
-      icon: 'code'
-    },
-    {
-      role: 'Frontend Developer',
-      company: 'Digital Agency',
-      period: '2020 - 2022',
-      description: 'Creación de interfaces modernas y responsive para diversos clientes.',
-      icon: 'briefcase'
-    },
-    {
-      role: 'Junior Developer',
-      company: 'Startup',
-      period: '2019 - 2020',
-      description: 'Desarrollo de features y mantenimiento de aplicaciones web.',
-      icon: 'user'
-    }
-  ]
-
   return (
     <section id="experiencia" className="py-20 px-6 bg-gray-50">
       <div className="max-w-4xl mx-auto">
@@ -60,7 +37,10 @@ const Experience = ({ visibleSections }: { visibleSections: VisibleSections }) =
                   </span>
                   <h3 className="text-xl font-bold mb-2">{exp.role}</h3>
                   <p className="text-gray-600 font-medium mb-3">{exp.company}</p>
-                  <p className="text-gray-700">{exp.description}</p>
+                  <div
+                    className="list-none"
+                    dangerouslySetInnerHTML={{ __html: exp.description }}
+                  />
                 </div>
               </div>
             ))}
